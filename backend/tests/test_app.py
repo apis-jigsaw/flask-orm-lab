@@ -19,7 +19,7 @@ def app():
 
         conn.commit()
         close_db()
-    yield flask_app
+        yield flask_app
 
     with flask_app.app_context():
         close_db()
